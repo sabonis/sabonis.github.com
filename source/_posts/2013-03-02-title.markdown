@@ -1,0 +1,14 @@
+---
+layout: post
+title: "It works."
+date: 2013-03-02 05:27
+comments: true
+categories: 
+---
+Hello world, hello Jessica
+------
+{% img right http://www.asianpopcorn.com/battle_images/Jessica_Jung_snsd__14112010134139.jpg%}  
+Wow, this is a awesome blogging frame work.  
+There are many funny pluggins and themes to play with.  
+Maybe later.  
+I just called it a day.
