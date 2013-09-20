@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Java | Jessica and UNIX]]></title>
+  <link href="http://sabonis.github.com/blog/categories/java/atom.xml" rel="self"/>
+  <link href="http://sabonis.github.com/"/>
+  <updated>2013-09-21T03:54:54+08:00</updated>
+  <id>http://sabonis.github.com/</id>
+  <author>
+    <name><![CDATA[Sabonis]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[My Java Note]]></title>
+    <link href="http://sabonis.github.com/blog/2013/03/09/my-java-note/"/>
+    <updated>2013-03-09T13:51:00+08:00</updated>
+    <id>http://sabonis.github.com/blog/2013/03/09/my-java-note</id>
+    <content type="html"><![CDATA[<p>{% blockquote John Graham-Cumming <a href="http://blog.jgc.org/2007/10/write-once-debug-everywhere.html">http://blog.jgc.org/2007/10/write-once-debug-everywhere.html</a> %}
+Write once, debug everywhere.</p>
+
+<h2>{% endblockquote %} </h2>
+
+<p>{% codeblock String class StringTest.java  %}
+&ldquo;Jessica&rdquo;.subString(0, 4) // return Jess
+{% endcodeblock %}</p>
+]]></content>
+  </entry>
+  
+</feed>

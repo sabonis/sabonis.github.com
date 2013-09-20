@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: \*nix | Jessica and UNIX]]></title>
+  <link href="http://sabonis.github.com/blog/categories/slash-star-nix/atom.xml" rel="self"/>
+  <link href="http://sabonis.github.com/"/>
+  <updated>2013-09-21T03:54:54+08:00</updated>
+  <id>http://sabonis.github.com/</id>
+  <author>
+    <name><![CDATA[Sabonis]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Tmux-Powerline]]></title>
+    <link href="http://sabonis.github.com/blog/2013/03/17/tmux-powerline/"/>
+    <updated>2013-03-17T20:45:00+08:00</updated>
+    <id>http://sabonis.github.com/blog/2013/03/17/tmux-powerline</id>
+    <content type="html"><![CDATA[<p>{% img /images/myImage/tmux.png tmux with powerline %}</p>
+
+<p><a href="http://tmux.sourceforge.net/">Tmux</a> is a very powerful terminal tool.
+I was once a user of <em>Screen</em>,
+but after giving <em>Tmux</em> a try. There is no going back&hellip;, at least,
+after changing its key binding to <em>Screen</em> and <em>Vim</em> alike.
+It is, though, powerful enough, folks just don&rsquo;t content with what we have now.
+So here comes one of my favo plugins &ndash; <em>Tmux-Powerline</em>.</p>
+
+<h2>one big problem &ndash; <strong>Special Character</strong></h2>
+
+<p>{% codeblock Use fontforge lang:sh %}
+sudo apt-get install python-fontforge             # install needed package
+cd /usr/share/fonts/truetype/ubuntu-font-family/  # my os is Ubuntu 12.04
+PATH_TO_FONTFORGE UbuntuMono-R.ttf                # no more garbled character
+{% endcodeblock %}</p>
+]]></content>
+  </entry>
+  
+</feed>
