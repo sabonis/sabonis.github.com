@@ -4,7 +4,7 @@
   <title><![CDATA[Category: \*nix | Jessica and UNIX]]></title>
   <link href="http://sabonis.github.com/blog/categories/slash-star-nix/atom.xml" rel="self"/>
   <link href="http://sabonis.github.com/"/>
-  <updated>2013-09-21T03:54:54+08:00</updated>
+  <updated>2013-09-21T12:59:06+08:00</updated>
   <id>http://sabonis.github.com/</id>
   <author>
     <name><![CDATA[Sabonis]]></name>
@@ -18,7 +18,7 @@
     <link href="http://sabonis.github.com/blog/2013/03/17/tmux-powerline/"/>
     <updated>2013-03-17T20:45:00+08:00</updated>
     <id>http://sabonis.github.com/blog/2013/03/17/tmux-powerline</id>
-    <content type="html"><![CDATA[<p>{% img /images/myImage/tmux.png tmux with powerline %}</p>
+    <content type="html"><![CDATA[<p><img src="/images/myImage/tmux.png" title="tmux with powerline" ></p>
 
 <p><a href="http://tmux.sourceforge.net/">Tmux</a> is a very powerful terminal tool.
 I was once a user of <em>Screen</em>,
@@ -29,11 +29,14 @@ So here comes one of my favo plugins &ndash; <em>Tmux-Powerline</em>.</p>
 
 <h2>one big problem &ndash; <strong>Special Character</strong></h2>
 
-<p>{% codeblock Use fontforge lang:sh %}
-sudo apt-get install python-fontforge             # install needed package
-cd /usr/share/fonts/truetype/ubuntu-font-family/  # my os is Ubuntu 12.04
-PATH_TO_FONTFORGE UbuntuMono-R.ttf                # no more garbled character
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Use fontforge </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>sudo apt-get install python-fontforge             <span class="c"># install needed package</span>
+</span><span class='line'><span class="nb">cd</span> /usr/share/fonts/truetype/ubuntu-font-family/  <span class="c"># my os is Ubuntu 12.04</span>
+</span><span class='line'>PATH_TO_FONTFORGE UbuntuMono-R.ttf                <span class="c"># no more garbled character</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 ]]></content>
   </entry>
   
