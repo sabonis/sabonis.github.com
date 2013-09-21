@@ -5,9 +5,9 @@ date: 2013-03-02 05:27
 comments: true
 categories: 
 ---
-Hello world, hello Jessica
+Hello world, hello Taeyeon
 ------
-{% img right http://www.asianpopcorn.com/battle_images/Jessica_Jung_snsd__14112010134139.jpg%}  
+{% img right /images/myImage/taeyeon.jpg%}
 Wow, this is a awesome blogging frame work.  
 There are many funny pluggins and themes to play with.  
 Maybe later.  
