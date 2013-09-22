@@ -3,7 +3,7 @@ layout: post
 title: "Tmux-Powerline"
 date: 2013-03-17 20:45
 comments: true
-categories: \*nix
+categories: Unix
 ---
 {% img /images/myImage/tmux.png tmux with powerline %}
 
