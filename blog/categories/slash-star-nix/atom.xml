@@ -4,7 +4,7 @@
   <title><![CDATA[Category: \*nix | a Code Farmer]]></title>
   <link href="http://sabonis.github.com/blog/categories/slash-star-nix/atom.xml" rel="self"/>
   <link href="http://sabonis.github.com/"/>
-  <updated>2013-09-21T17:49:47+08:00</updated>
+  <updated>2013-09-22T13:27:42+08:00</updated>
   <id>http://sabonis.github.com/</id>
   <author>
     <name><![CDATA[Sabonis]]></name>
@@ -12,6 +12,69 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Fingerprint in Arch Linux]]></title>
+    <link href="http://sabonis.github.com/blog/2013/09/22/fingerprint/"/>
+    <updated>2013-09-22T03:32:00+08:00</updated>
+    <id>http://sabonis.github.com/blog/2013/09/22/fingerprint</id>
+    <content type="html"><![CDATA[<p><img src="/images/myImage/X230.jpg" width="300" height="500" title="X230" ></p>
+
+<p>X230 is a cool laptop I ever used, not mentioned it backend by Arch Linux. Coolest thing is that it has figerprint device.
+You can just use &ldquo;right-index-finger&rdquo; to login into the system without any key pressed.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Console </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;check device status&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;lsusb&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;you would find something like this below&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;.
+</span><span class='line'>&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;.
+</span><span class='line'>Bus 003 Device 003: ID 147e:2020 Upek TouchChip Fingerprint Coprocessor <span class="o">(</span>WBF advanced mode<span class="o">)</span>
+</span><span class='line'>&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;.&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;install related package&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;pacman -S fprintd&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;scan your fingerprint by this interactive <span class="nb">command</span>&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;fprintd-enroll&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;follow the instruction, and you are all <span class="nb">set</span>&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Tmux-Powerline]]></title>
