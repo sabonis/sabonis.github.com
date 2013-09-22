@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: \*nix | a Code Farmer]]></title>
-  <link href="http://sabonis.github.com/blog/categories/slash-star-nix/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Unix | a Code Farmer]]></title>
+  <link href="http://sabonis.github.com/blog/categories/unix/atom.xml" rel="self"/>
   <link href="http://sabonis.github.com/"/>
-  <updated>2013-09-22T13:27:42+08:00</updated>
+  <updated>2013-09-22T18:43:17+08:00</updated>
   <id>http://sabonis.github.com/</id>
   <author>
     <name><![CDATA[Sabonis]]></name>
@@ -18,7 +18,7 @@
     <link href="http://sabonis.github.com/blog/2013/09/22/fingerprint/"/>
     <updated>2013-09-22T03:32:00+08:00</updated>
     <id>http://sabonis.github.com/blog/2013/09/22/fingerprint</id>
-    <content type="html"><![CDATA[<p><img src="/images/myImage/X230.jpg" width="300" height="500" title="X230" ></p>
+    <content type="html"><![CDATA[<p><img src="/images/myImage/X230.jpg" title="X230" ></p>
 
 <p>X230 is a cool laptop I ever used, not mentioned it backend by Arch Linux. Coolest thing is that it has figerprint device.
 You can just use &ldquo;right-index-finger&rdquo; to login into the system without any key pressed.</p>
