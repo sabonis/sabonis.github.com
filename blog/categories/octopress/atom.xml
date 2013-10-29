@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | a Code Farmer]]></title>
   <link href="http://sabonis.github.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://sabonis.github.com/"/>
-  <updated>2013-09-18T02:28:29+08:00</updated>
+  <updated>2013-10-30T01:49:30+08:00</updated>
   <id>http://sabonis.github.com/</id>
   <author>
     <name><![CDATA[Sabonis]]></name>
@@ -22,25 +22,48 @@
 
 <p>This post is for my memory-limited brain. Basically, three step needed.</p>
 
-<h3>1. Create a new post.</h3>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Console </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h3&gt;1. Create a new post.&lt;/h3&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;rake new_post<span class="o">[</span>&amp;ldquo;POST_TITLE&amp;rdquo;<span class="o">]</span> <span class="c"># notice the backslash before square brackets&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;new created post file will locate at place like line below. End with *.markdown.&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h3&gt;2. Add markdown format stuff here&lt;/h3&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;vi PATH_TO_OCTOPRESS/source/_posts/DATE-POST_TITLE.markdown&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h3&gt;3. Generate compliled files and push to server you defined before.&lt;/h3&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;rake generate &amp;amp;&amp;amp; rake deploy&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;or&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;rake gen_deploy
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
-<p><code>
-rake new_post\["POST_TITLE"\] #notice the backslash before square brackets
-</code>
-New created post file will locate at place like line below. End with <em>.markdown</em>.</p>
-
-<h3>2. Add markdown format stuff here</h3>
-
-<p><code>
-vi PATH_TO_OCTOPRESS/source/_posts/DATE-POST_TITLE.markdown
-</code></p>
-
-<h3>3. Generate compliled files and push to server you defined before.</h3>
-
-<p><code>
-rake generate &amp;&amp; rake deploy
-</code>
-And we are done here.</p>
+<p>And we are done here.</p>
 ]]></content>
   </entry>
   

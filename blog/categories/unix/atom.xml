@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Unix | a Code Farmer]]></title>
   <link href="http://sabonis.github.com/blog/categories/unix/atom.xml" rel="self"/>
   <link href="http://sabonis.github.com/"/>
-  <updated>2013-09-18T02:28:29+08:00</updated>
+  <updated>2013-10-30T01:49:30+08:00</updated>
   <id>http://sabonis.github.com/</id>
   <author>
     <name><![CDATA[Sabonis]]></name>
@@ -18,11 +18,13 @@
     <link href="http://sabonis.github.com/blog/2013/09/22/fingerprint/"/>
     <updated>2013-09-22T03:32:00+08:00</updated>
     <id>http://sabonis.github.com/blog/2013/09/22/fingerprint</id>
-    <content type="html"><![CDATA[<p>X230 is a cool laptop I ever used, not mentioned it backend by Arch Linux. Coolest thing is that it has figerprint device.
+    <content type="html"><![CDATA[<p><img src="/images/myImage/X230.jpg" title="X230" ></p>
+
+<p>X230 is a cool laptop I ever used, not mentioned it backend by Arch Linux. Coolest thing is that it has figerprint device.
 You can just use &ldquo;right-index-finger&rdquo; to login into the system without any key pressed.</p>
 
 <p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Console </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -71,8 +73,6 @@ You can just use &ldquo;right-index-finger&rdquo; to login into the system witho
 </span><span class='line'>
 </span><span class='line'>&lt;p&gt;
 </span></code></pre></td></tr></table></div></figure></notextile></div></p>
-
-<p><img src="/images/myImage/X230.jpg" title="X230" ></p>
 ]]></content>
   </entry>
   
@@ -93,7 +93,7 @@ So here comes one of my favo plugins &ndash; <em>Tmux-Powerline</em>.</p>
 <h2>one big problem &ndash; <strong>Special Character</strong></h2>
 
 <p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Use fontforge </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 </pre></td><td class='code'><pre><code class='sh'><span class='line'>sudo apt-get install python-fontforge             <span class="c"># install needed package</span>
