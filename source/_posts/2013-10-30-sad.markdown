@@ -1,0 +1,14 @@
+---
+layout: post
+title: "sad"
+date: 2013-10-30 01:46
+comments: true
+categories: 
+---
+
+shoot,
+after `yaourt -Syu`,
+gnome is dead.
+I use LXDE now.
+but I want try gnome 3.10.
+so sad.
