@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: arch | a Code Farmer]]></title>
+  <link href="http://sabonis.github.com/blog/categories/arch/atom.xml" rel="self"/>
+  <link href="http://sabonis.github.com/"/>
+  <updated>2013-11-30T14:17:59+08:00</updated>
+  <id>http://sabonis.github.com/</id>
+  <author>
+    <name><![CDATA[Sabonis]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[LAMP on ARCH]]></title>
+    <link href="http://sabonis.github.com/blog/2013/11/30/lamp-on-arch/"/>
+    <updated>2013-11-30T12:11:00+08:00</updated>
+    <id>http://sabonis.github.com/blog/2013/11/30/lamp-on-arch</id>
+    <content type="html"><![CDATA[<p>If you are a web developer, you got to have these packages to be deployed on your ARCH.
+Those who use Windows, just keep playing CIVILIZATION V, no bothers.</p>
+
+<p>Here is how</p>
+
+<h2>Installing part</h2>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Console </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;update all packages&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;pacman -Syu;
+</span><span class='line'>pacman -S apache php php-apache mariadb
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<h2>Configuring part</h2>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Console </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>vi /etc/httpd/conf/httpd.conf&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;append following row&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;LoadModule php5_module modules/libphp5.so
+</span><span class='line'>AddHandler php5-script php
+</span><span class='line'>Include conf/extra/php5_module.conf&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;setup mariadb, this is a interactive <span class="nb">command</span>, just follow the instruction&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;sudo mysql_secure_installation&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;enable httpd at start-up&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;sudo systemctl <span class="nb">enable </span>httpd &amp;amp;&amp;amp; systemctl restart
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>and we are done here.</p>
+]]></content>
+  </entry>
+  
+</feed>
