@@ -4,7 +4,7 @@
   <title><![CDATA[Category: arch | a Code Farmer]]></title>
   <link href="http://sabonis.github.com/blog/categories/arch/atom.xml" rel="self"/>
   <link href="http://sabonis.github.com/"/>
-  <updated>2013-11-30T14:28:20+08:00</updated>
+  <updated>2013-12-01T13:34:05+08:00</updated>
   <id>http://sabonis.github.com/</id>
   <author>
     <name><![CDATA[Sabonis]]></name>
@@ -58,13 +58,25 @@ Those who use Windows, just keep playing CIVILIZATION V, no bothers.</p>
 <span class='line-number'>13</span>
 <span class='line-number'>14</span>
 <span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'>vi /etc/httpd/conf/httpd.conf&lt;/p&gt;
 </span><span class='line'>
-</span><span class='line'>&lt;h1&gt;append following row&lt;/h1&gt;
+</span><span class='line'>&lt;h1&gt;append following entries&lt;/h1&gt;
 </span><span class='line'>
 </span><span class='line'>&lt;p&gt;LoadModule php5_module modules/libphp5.so
 </span><span class='line'>AddHandler php5-script php
 </span><span class='line'>Include conf/extra/php5_module.conf&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;vi /etc/php/php.ini&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;uncomment this line&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;extension<span class="o">=</span>mysqli.so&lt;/p&gt;
 </span><span class='line'>
 </span><span class='line'>&lt;h1&gt;setup mariadb, this is a interactive <span class="nb">command</span>, just follow the instruction&lt;/h1&gt;
 </span><span class='line'>
