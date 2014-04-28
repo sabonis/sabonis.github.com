@@ -4,7 +4,7 @@
   <title><![CDATA[a Code Farmer]]></title>
   <link href="http://sabonis.github.io/atom.xml" rel="self"/>
   <link href="http://sabonis.github.io/"/>
-  <updated>2014-04-28T13:10:31+08:00</updated>
+  <updated>2014-04-28T13:41:40+08:00</updated>
   <id>http://sabonis.github.io/</id>
   <author>
     <name><![CDATA[Sabonis]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress on Cygwin]]></title>
+    <link href="http://sabonis.github.io/blog/2014/04/28/octopress-on-cygwin/"/>
+    <updated>2014-04-28T13:36:16+08:00</updated>
+    <id>http://sabonis.github.io/blog/2014/04/28/octopress-on-cygwin</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[LAMP on ARCH]]></title>
