@@ -4,7 +4,7 @@
   <title><![CDATA[a Code Farmer]]></title>
   <link href="http://sabonis.github.io/atom.xml" rel="self"/>
   <link href="http://sabonis.github.io/"/>
-  <updated>2014-04-28T11:47:14+08:00</updated>
+  <updated>2014-04-28T13:10:31+08:00</updated>
   <id>http://sabonis.github.io/</id>
   <author>
     <name><![CDATA[Sabonis]]></name>
@@ -234,9 +234,9 @@ So here comes one of my favo plugins &ndash; <em>Tmux-Powerline</em>.</p>
     <content type="html"><![CDATA[<h2>Hello world, hello Taeyeon</h2>
 
 <p><img class="right" src="http://sabonis.github.io/images/myImage/taeyeon.jpg">
-Wow, this is a awesome blogging frame work.<br/>
-There are many funny pluggins and themes to play with.<br/>
-Maybe later.<br/>
+Wow, this is a awesome blogging frame work.
+There are many funny pluggins and themes to play with.
+Maybe later.
 I just called it a day.</p>
 ]]></content>
   </entry>
