@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://sabonis.github.com/sitemap.xml 
+Sitemap: http://sabonis.github.io/sitemap.xml 

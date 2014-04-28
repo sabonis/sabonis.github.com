@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Octopress | a Code Farmer]]></title>
-  <link href="http://sabonis.github.com/blog/categories/octopress/atom.xml" rel="self"/>
-  <link href="http://sabonis.github.com/"/>
-  <updated>2013-12-03T00:05:05+08:00</updated>
-  <id>http://sabonis.github.com/</id>
+  <link href="http://sabonis.github.io/blog/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://sabonis.github.io/"/>
+  <updated>2014-04-28T11:10:37+08:00</updated>
+  <id>http://sabonis.github.io/</id>
   <author>
     <name><![CDATA[Sabonis]]></name>
     
@@ -14,10 +14,10 @@
 
   
   <entry>
-    <title type="html"><![CDATA[How to add a new post on Octopress]]></title>
-    <link href="http://sabonis.github.com/blog/2013/03/02/how-to-add-a-new-post-on-octopress/"/>
+    <title type="html"><![CDATA[How to Add a New Post on Octopress]]></title>
+    <link href="http://sabonis.github.io/blog/2013/03/02/how-to-add-a-new-post-on-octopress/"/>
     <updated>2013-03-02T09:57:00+08:00</updated>
-    <id>http://sabonis.github.com/blog/2013/03/02/how-to-add-a-new-post-on-octopress</id>
+    <id>http://sabonis.github.io/blog/2013/03/02/how-to-add-a-new-post-on-octopress</id>
     <content type="html"><![CDATA[<h2>Show me how</h2>
 
 <p>This post is for my memory-limited brain. Basically, three step needed.</p>

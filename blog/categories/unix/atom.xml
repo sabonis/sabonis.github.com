@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Unix | a Code Farmer]]></title>
-  <link href="http://sabonis.github.com/blog/categories/unix/atom.xml" rel="self"/>
-  <link href="http://sabonis.github.com/"/>
-  <updated>2013-12-03T00:05:05+08:00</updated>
-  <id>http://sabonis.github.com/</id>
+  <link href="http://sabonis.github.io/blog/categories/unix/atom.xml" rel="self"/>
+  <link href="http://sabonis.github.io/"/>
+  <updated>2014-04-28T11:10:37+08:00</updated>
+  <id>http://sabonis.github.io/</id>
   <author>
     <name><![CDATA[Sabonis]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Fingerprint in Arch Linux]]></title>
-    <link href="http://sabonis.github.com/blog/2013/09/22/fingerprint/"/>
+    <link href="http://sabonis.github.io/blog/2013/09/22/fingerprint/"/>
     <updated>2013-09-22T03:32:00+08:00</updated>
-    <id>http://sabonis.github.com/blog/2013/09/22/fingerprint</id>
+    <id>http://sabonis.github.io/blog/2013/09/22/fingerprint</id>
     <content type="html"><![CDATA[<p><img src="/images/myImage/X230.jpg" title="X230" ></p>
 
 <p>X230 is a cool laptop I ever used, not mentioned it backend by Arch Linux. Coolest thing is that it has figerprint device.
@@ -78,9 +78,9 @@ You can just use &ldquo;right-index-finger&rdquo; to login into the system witho
   
   <entry>
     <title type="html"><![CDATA[Tmux-Powerline]]></title>
-    <link href="http://sabonis.github.com/blog/2013/03/17/tmux-powerline/"/>
+    <link href="http://sabonis.github.io/blog/2013/03/17/tmux-powerline/"/>
     <updated>2013-03-17T20:45:00+08:00</updated>
-    <id>http://sabonis.github.com/blog/2013/03/17/tmux-powerline</id>
+    <id>http://sabonis.github.io/blog/2013/03/17/tmux-powerline</id>
     <content type="html"><![CDATA[<p><img src="/images/myImage/tmux.png" title="tmux with powerline" ></p>
 
 <p><a href="http://tmux.sourceforge.net/">Tmux</a> is a very powerful terminal tool.

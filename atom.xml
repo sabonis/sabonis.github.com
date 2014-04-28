@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[a Code Farmer]]></title>
-  <link href="http://sabonis.github.com/atom.xml" rel="self"/>
-  <link href="http://sabonis.github.com/"/>
-  <updated>2013-12-03T00:05:05+08:00</updated>
-  <id>http://sabonis.github.com/</id>
+  <link href="http://sabonis.github.io/atom.xml" rel="self"/>
+  <link href="http://sabonis.github.io/"/>
+  <updated>2014-04-28T11:10:37+08:00</updated>
+  <id>http://sabonis.github.io/</id>
   <author>
     <name><![CDATA[Sabonis]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[LAMP on ARCH]]></title>
-    <link href="http://sabonis.github.com/blog/2013/11/30/lamp-on-arch/"/>
+    <link href="http://sabonis.github.io/blog/2013/11/30/lamp-on-arch/"/>
     <updated>2013-11-30T12:11:00+08:00</updated>
-    <id>http://sabonis.github.com/blog/2013/11/30/lamp-on-arch</id>
+    <id>http://sabonis.github.io/blog/2013/11/30/lamp-on-arch</id>
     <content type="html"><![CDATA[<p>If you are a web developer, you got to have these packages to be deployed on your ARCH.
 Those who use Windows, just keep playing CIVILIZATION V, no bothers.</p>
 
@@ -77,9 +77,9 @@ Those who use Windows, just keep playing CIVILIZATION V, no bothers.</p>
   
   <entry>
     <title type="html"><![CDATA[Sad]]></title>
-    <link href="http://sabonis.github.com/blog/2013/10/30/sad/"/>
+    <link href="http://sabonis.github.io/blog/2013/10/30/sad/"/>
     <updated>2013-10-30T01:46:00+08:00</updated>
-    <id>http://sabonis.github.com/blog/2013/10/30/sad</id>
+    <id>http://sabonis.github.io/blog/2013/10/30/sad</id>
     <content type="html"><![CDATA[<p>shoot,
 after <code>yaourt -Syu</code>,
 gnome is dead.
@@ -91,10 +91,10 @@ so sad.</p>
   
   <entry>
     <title type="html"><![CDATA[Fingerprint in Arch Linux]]></title>
-    <link href="http://sabonis.github.com/blog/2013/09/22/fingerprint/"/>
+    <link href="http://sabonis.github.io/blog/2013/09/22/fingerprint/"/>
     <updated>2013-09-22T03:32:00+08:00</updated>
-    <id>http://sabonis.github.com/blog/2013/09/22/fingerprint</id>
-    <content type="html"><![CDATA[<p><img src="http://sabonis.github.com/images/myImage/X230.jpg" title="X230" ></p>
+    <id>http://sabonis.github.io/blog/2013/09/22/fingerprint</id>
+    <content type="html"><![CDATA[<p><img src="http://sabonis.github.io/images/myImage/X230.jpg" title="X230" ></p>
 
 <p>X230 is a cool laptop I ever used, not mentioned it backend by Arch Linux. Coolest thing is that it has figerprint device.
 You can just use &ldquo;right-index-finger&rdquo; to login into the system without any key pressed.</p>
@@ -139,10 +139,10 @@ You can just use &ldquo;right-index-finger&rdquo; to login into the system witho
   
   <entry>
     <title type="html"><![CDATA[Tmux-Powerline]]></title>
-    <link href="http://sabonis.github.com/blog/2013/03/17/tmux-powerline/"/>
+    <link href="http://sabonis.github.io/blog/2013/03/17/tmux-powerline/"/>
     <updated>2013-03-17T20:45:00+08:00</updated>
-    <id>http://sabonis.github.com/blog/2013/03/17/tmux-powerline</id>
-    <content type="html"><![CDATA[<p><img src="http://sabonis.github.com/images/myImage/tmux.png" title="tmux with powerline" ></p>
+    <id>http://sabonis.github.io/blog/2013/03/17/tmux-powerline</id>
+    <content type="html"><![CDATA[<p><img src="http://sabonis.github.io/images/myImage/tmux.png" title="tmux with powerline" ></p>
 
 <p><a href="http://tmux.sourceforge.net/">Tmux</a> is a very powerful terminal tool.
 I was once a user of <em>Screen</em>,
@@ -169,9 +169,9 @@ So here comes one of my favo plugins &ndash; <em>Tmux-Powerline</em>.</p>
   
   <entry>
     <title type="html"><![CDATA[My Java Note]]></title>
-    <link href="http://sabonis.github.com/blog/2013/03/09/my-java-note/"/>
+    <link href="http://sabonis.github.io/blog/2013/03/09/my-java-note/"/>
     <updated>2013-03-09T13:51:00+08:00</updated>
-    <id>http://sabonis.github.com/blog/2013/03/09/my-java-note</id>
+    <id>http://sabonis.github.io/blog/2013/03/09/my-java-note</id>
     <content type="html"><![CDATA[<blockquote><p>Write once, debug everywhere.</p><footer><strong>John Graham-Cumming</strong> <cite><a href='http://blog.jgc.org/2007/10/write-once-debug-everywhere.html'>blog.jgc.org/2007/10/&hellip;</a></cite></footer></blockquote>
 
 
@@ -189,9 +189,9 @@ So here comes one of my favo plugins &ndash; <em>Tmux-Powerline</em>.</p>
   
   <entry>
     <title type="html"><![CDATA[How to Add a New Post on Octopress]]></title>
-    <link href="http://sabonis.github.com/blog/2013/03/02/how-to-add-a-new-post-on-octopress/"/>
+    <link href="http://sabonis.github.io/blog/2013/03/02/how-to-add-a-new-post-on-octopress/"/>
     <updated>2013-03-02T09:57:00+08:00</updated>
-    <id>http://sabonis.github.com/blog/2013/03/02/how-to-add-a-new-post-on-octopress</id>
+    <id>http://sabonis.github.io/blog/2013/03/02/how-to-add-a-new-post-on-octopress</id>
     <content type="html"><![CDATA[<h2>Show me how</h2>
 
 <p>This post is for my memory-limited brain. Basically, three step needed.</p>
@@ -228,12 +228,12 @@ So here comes one of my favo plugins &ndash; <em>Tmux-Powerline</em>.</p>
   
   <entry>
     <title type="html"><![CDATA[It Works.]]></title>
-    <link href="http://sabonis.github.com/blog/2013/03/02/title/"/>
+    <link href="http://sabonis.github.io/blog/2013/03/02/title/"/>
     <updated>2013-03-02T05:27:00+08:00</updated>
-    <id>http://sabonis.github.com/blog/2013/03/02/title</id>
+    <id>http://sabonis.github.io/blog/2013/03/02/title</id>
     <content type="html"><![CDATA[<h2>Hello world, hello Taeyeon</h2>
 
-<p><img class="right" src="http://sabonis.github.com/images/myImage/taeyeon.jpg">
+<p><img class="right" src="http://sabonis.github.io/images/myImage/taeyeon.jpg">
 Wow, this is a awesome blogging frame work.<br/>
 There are many funny pluggins and themes to play with.<br/>
 Maybe later.<br/>

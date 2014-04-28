@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Java | a Code Farmer]]></title>
-  <link href="http://sabonis.github.com/blog/categories/java/atom.xml" rel="self"/>
-  <link href="http://sabonis.github.com/"/>
-  <updated>2013-12-03T00:05:05+08:00</updated>
-  <id>http://sabonis.github.com/</id>
+  <link href="http://sabonis.github.io/blog/categories/java/atom.xml" rel="self"/>
+  <link href="http://sabonis.github.io/"/>
+  <updated>2014-04-28T11:10:37+08:00</updated>
+  <id>http://sabonis.github.io/</id>
   <author>
     <name><![CDATA[Sabonis]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[My Java Note]]></title>
-    <link href="http://sabonis.github.com/blog/2013/03/09/my-java-note/"/>
+    <link href="http://sabonis.github.io/blog/2013/03/09/my-java-note/"/>
     <updated>2013-03-09T13:51:00+08:00</updated>
-    <id>http://sabonis.github.com/blog/2013/03/09/my-java-note</id>
+    <id>http://sabonis.github.io/blog/2013/03/09/my-java-note</id>
     <content type="html"><![CDATA[<p><blockquote><p>Write once, debug everywhere.</p></p><p><h2></p><footer><strong>John Graham-Cumming <a href="http://blog.jgc.org/2007/10/write-once-debug-everywhere.html">http://blog.jgc.org/2007/10/write-once-debug-everywhere.html</a></strong></footer></blockquote> </h2>
 
 <p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>String class StringTest.java  </span></figcaption>
