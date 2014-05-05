@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | a Code Farmer]]></title>
   <link href="http://sabonis.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://sabonis.github.io/"/>
-  <updated>2014-04-28T13:41:40+08:00</updated>
+  <updated>2014-05-05T15:50:02+08:00</updated>
   <id>http://sabonis.github.io/</id>
   <author>
     <name><![CDATA[Sabonis]]></name>
@@ -12,6 +12,39 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress on Cygwin]]></title>
+    <link href="http://sabonis.github.io/blog/2014/04/28/octopress-on-cygwin/"/>
+    <updated>2014-04-28T13:36:16+08:00</updated>
+    <id>http://sabonis.github.io/blog/2014/04/28/octopress-on-cygwin</id>
+    <content type="html"><![CDATA[<p>It is painful when you are forced to use Windows as your programming environment.
+But there comes a rescuer Cygwin. With Cygwin, you have almost all tools that Unix
+have if install properly.</p>
+
+<p>comment out following these lines
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>In the Rakefile </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;pre&gt;&lt;code&gt;#if (/</span><span class="n">cygwin</span><span class="o">|</span><span class="n">mswin</span><span class="o">|</span><span class="n">mingw</span><span class="o">|</span><span class="n">bccwin</span><span class="o">|</span><span class="n">wince</span><span class="o">|</span><span class="n">emx</span><span class="o">/</span> <span class="o">=~</span> <span class="no">RUBY_PLATFORM</span><span class="p">)</span> <span class="o">!=</span> <span class="kp">nil</span>
+</span><span class='line'>  <span class="c1">#puts &#39;## Set the codepage to 65001 for Windows machines&#39;</span>
+</span><span class='line'>  <span class="c1">#`chcp 65001`</span>
+</span><span class='line'><span class="c1">#end</span>
+</span><span class='line'><span class="o">&lt;</span><span class="sr">/code&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[How to Add a New Post on Octopress]]></title>

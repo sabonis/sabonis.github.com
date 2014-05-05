@@ -4,7 +4,7 @@
   <title><![CDATA[a Code Farmer]]></title>
   <link href="http://sabonis.github.io/atom.xml" rel="self"/>
   <link href="http://sabonis.github.io/"/>
-  <updated>2014-04-28T13:41:40+08:00</updated>
+  <updated>2014-05-05T15:50:02+08:00</updated>
   <id>http://sabonis.github.io/</id>
   <author>
     <name><![CDATA[Sabonis]]></name>
@@ -18,7 +18,25 @@
     <link href="http://sabonis.github.io/blog/2014/04/28/octopress-on-cygwin/"/>
     <updated>2014-04-28T13:36:16+08:00</updated>
     <id>http://sabonis.github.io/blog/2014/04/28/octopress-on-cygwin</id>
-    <content type="html"><![CDATA[
+    <content type="html"><![CDATA[<p>It is painful when you are forced to use Windows as your programming environment.
+But there comes a rescuer Cygwin. With Cygwin, you have almost all tools that Unix
+have if install properly.</p>
+
+<p>comment out following these lines</p>
+
+<figure class='code'><figcaption><span>In the Rakefile </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'>    <span class="c1">#if (/cygwin|mswin|mingw|bccwin|wince|emx/ =~ RUBY_PLATFORM) != nil</span>
+</span><span class='line'>      <span class="c1">#puts &#39;## Set the codepage to 65001 for Windows machines&#39;</span>
+</span><span class='line'>      <span class="c1">#`chcp 65001`</span>
+</span><span class='line'>    <span class="c1">#end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
 ]]></content>
   </entry>
   
