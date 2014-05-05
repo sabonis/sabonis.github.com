@@ -8,7 +8,7 @@ categories:
 Hello world, hello Taeyeon
 ------
 {% img right /images/myImage/taeyeon.jpg%}
-Wow, this is a awesome blogging frame work.  
-There are many funny pluggins and themes to play with.  
-Maybe later.  
+Wow, this is a awesome blogging frame work.
+There are many funny pluggins and themes to play with.
+Maybe later.
 I just called it a day.
