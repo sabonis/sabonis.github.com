@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | a Code Farmer]]></title>
   <link href="http://sabonis.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://sabonis.github.io/"/>
-  <updated>2014-05-05T15:50:02+08:00</updated>
+  <updated>2014-05-06T15:09:25+08:00</updated>
   <id>http://sabonis.github.io/</id>
   <author>
     <name><![CDATA[Sabonis]]></name>
@@ -42,7 +42,8 @@ have if install properly.</p>
 </span><span class='line'><span class="o">&lt;</span><span class="sr">/code&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
 </span><span class='line'>
 </span><span class='line'><span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+or you will get failed in the process of <code>rake generate</code></p>
 ]]></content>
   </entry>
   
