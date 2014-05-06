@@ -17,4 +17,5 @@ comment out following these lines
       #`chcp 65001`
     #end
 {% endcodeblock %}
+or you will get failed in the process of `rake generate`
 
