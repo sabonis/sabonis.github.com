@@ -4,6 +4,8 @@ title: "Octopress on Cygwin"
 date: 2014-04-28 13:36:16 +0800
 comments: true
 categories: Octopress
+keywords: “cygwin, octopress”
+description: “octopress on Cygwin”
 ---
 
 It is painful when you are forced to use Windows as your programming environment.
