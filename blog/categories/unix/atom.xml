@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Unix | a Code Farmer]]></title>
   <link href="http://sabonis.github.io/blog/categories/unix/atom.xml" rel="self"/>
   <link href="http://sabonis.github.io/"/>
-  <updated>2015-04-19T00:59:25+08:00</updated>
+  <updated>2015-04-19T01:00:21+08:00</updated>
   <id>http://sabonis.github.io/</id>
   <author>
     <name><![CDATA[Sabonis]]></name>
@@ -18,39 +18,65 @@
     <link href="http://sabonis.github.io/blog/2013/09/22/fingerprint/"/>
     <updated>2013-09-22T03:32:00+08:00</updated>
     <id>http://sabonis.github.io/blog/2013/09/22/fingerprint</id>
-    <content type="html"><![CDATA[<h1>Saddly, it has been sold the other day in 2014.</h1>
+    <content type="html"><![CDATA[<h1>Saddly, it has been sold one day in 2014.</h1>
 
 <p>&ndash;edited Sun Apr 19 00:58:58 CST 2015</p>
 
-<p>{% img /images/myImage/X230.jpg X230 %}</p>
+<p><img src="/images/myImage/X230.jpg" title="X230" ></p>
 
 <p>X230 is a cool laptop I ever used, not mentioned it backend by Arch Linux. Coolest thing is that it has figerprint device.
 You can just use &ldquo;right-index-finger&rdquo; to login into the system without any key pressed.</p>
 
-<p>{% codeblock Console lang:sh %}</p>
-
-<h1>check device status</h1>
-
-<p>lsusb</p>
-
-<h1>you would find something like this below</h1>
-
-<p>&hellip;&hellip;&hellip;&hellip;.
-&hellip;&hellip;&hellip;&hellip;.
-Bus 003 Device 003: ID 147e:2020 Upek TouchChip Fingerprint Coprocessor (WBF advanced mode)
-&hellip;&hellip;&hellip;&hellip;.</p>
-
-<h1>install related package</h1>
-
-<p>pacman -S fprintd</p>
-
-<h1>scan your fingerprint by this interactive command</h1>
-
-<p>fprintd-enroll</p>
-
-<h1>follow the instruction, and you are all set</h1>
-
-<p>{% endcodeblock %}</p>
+<p><figure class='code'><figcaption><span>Console </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;check device status&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;lsusb&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;you would find something like this below&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;<span class="p">&amp;</span>hellip<span class="p">;&amp;</span>hellip<span class="p">;&amp;</span>hellip<span class="p">;&amp;</span>hellip<span class="p">;</span>.
+</span><span class='line'><span class="p">&amp;</span>hellip<span class="p">;&amp;</span>hellip<span class="p">;&amp;</span>hellip<span class="p">;&amp;</span>hellip<span class="p">;</span>.
+</span><span class='line'>Bus <span class="m">003</span> Device 003: ID 147e:2020 Upek TouchChip Fingerprint Coprocessor <span class="o">(</span>WBF advanced mode<span class="o">)</span>
+</span><span class='line'><span class="p">&amp;</span>hellip<span class="p">;&amp;</span>hellip<span class="p">;&amp;</span>hellip<span class="p">;&amp;</span>hellip<span class="p">;</span>.&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;install related package&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;pacman -S fprintd&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;scan your fingerprint by this interactive <span class="nb">command</span>&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;fprintd-enroll&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h1&gt;follow the instruction, and you are all <span class="nb">set</span>&lt;/h1&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;
+</span></code></pre></td></tr></table></div></figure></p>
 ]]></content>
   </entry>
   
@@ -59,7 +85,7 @@ Bus 003 Device 003: ID 147e:2020 Upek TouchChip Fingerprint Coprocessor (WBF adv
     <link href="http://sabonis.github.io/blog/2013/03/17/tmux-powerline/"/>
     <updated>2013-03-17T20:45:00+08:00</updated>
     <id>http://sabonis.github.io/blog/2013/03/17/tmux-powerline</id>
-    <content type="html"><![CDATA[<p>{% img /images/myImage/tmux.png tmux with powerline %}</p>
+    <content type="html"><![CDATA[<p><img src="/images/myImage/tmux.png" title="tmux with powerline" ></p>
 
 <p><a href="http://tmux.sourceforge.net/">Tmux</a> is a very powerful terminal tool.
 I was once a user of <em>Screen</em>,
@@ -70,11 +96,14 @@ So here comes one of my favo plugins - <em>Tmux-Powerline</em>.</p>
 
 <h2>one big problem - <strong>Special Character</strong></h2>
 
-<p>{% codeblock Use fontforge lang:sh %}
-sudo apt-get install python-fontforge             # install needed package
-cd /usr/share/fonts/truetype/ubuntu-font-family/  # my os is Ubuntu 12.04
-PATH_TO_FONTFORGE UbuntuMono-R.ttf                # no more garbled character
-{% endcodeblock %}</p>
+<p><figure class='code'><figcaption><span>Use fontforge </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>sudo apt-get install python-fontforge             <span class="c"># install needed package</span>
+</span><span class='line'><span class="nb">cd</span> /usr/share/fonts/truetype/ubuntu-font-family/  <span class="c"># my os is Ubuntu 12.04</span>
+</span><span class='line'>PATH_TO_FONTFORGE UbuntuMono-R.ttf                <span class="c"># no more garbled character</span>
+</span></code></pre></td></tr></table></div></figure></p>
 ]]></content>
   </entry>
   
