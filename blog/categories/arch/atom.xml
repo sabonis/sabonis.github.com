@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Arch | a Code Farmer]]></title>
   <link href="http://sabonis.github.io/blog/categories/arch/atom.xml" rel="self"/>
   <link href="http://sabonis.github.io/"/>
-  <updated>2015-04-19T00:15:16+08:00</updated>
+  <updated>2015-04-19T00:59:25+08:00</updated>
   <id>http://sabonis.github.io/</id>
   <author>
     <name><![CDATA[Sabonis]]></name>
@@ -25,67 +25,39 @@ Those who use Windows, just keep playing CIVILIZATION V, no bothers.</p>
 
 <h2>Installing part</h2>
 
-<p><figure class='code'><figcaption><span>Console </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>&lt;/p&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;h1&gt;update all packages&lt;/h1&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;p&gt;pacman -Syu<span class="p">;</span>
-</span><span class='line'>pacman -S apache php php-apache mariadb
-</span></code></pre></td></tr></table></div></figure></p>
+<p>{% codeblock Console lang:bash %}</p>
+
+<h1>update all packages</h1>
+
+<p>pacman -Syu;
+pacman -S apache php php-apache mariadb
+{% endcodeblock %}</p>
 
 <h2>Configuring part</h2>
 
-<p><figure class='code'><figcaption><span>Console </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>vi /etc/httpd/conf/httpd.conf&lt;/p&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;h1&gt;append following entries&lt;/h1&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;p&gt;LoadModule php5_module modules/libphp5.so
-</span><span class='line'>AddHandler php5-script php
-</span><span class='line'>Include conf/extra/php5_module.conf&lt;/p&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;p&gt;vi /etc/php/php.ini&lt;/p&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;h1&gt;uncomment this line&lt;/h1&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;p&gt;extension<span class="o">=</span>mysqli.so&lt;/p&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;h1&gt;setup mariadb, this is a interactive <span class="nb">command</span>, just follow the instruction&lt;/h1&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;p&gt;sudo mysql_secure_installation&lt;/p&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;h1&gt;enable httpd at start-up&lt;/h1&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;p&gt;sudo systemctl <span class="nb">enable </span>httpd <span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> systemctl restart httpd
-</span></code></pre></td></tr></table></div></figure></p>
+<p>{% codeblock Console lang:bash %}
+vi /etc/httpd/conf/httpd.conf</p>
+
+<h1>append following entries</h1>
+
+<p>LoadModule php5_module modules/libphp5.so
+AddHandler php5-script php
+Include conf/extra/php5_module.conf</p>
+
+<p>vi /etc/php/php.ini</p>
+
+<h1>uncomment this line</h1>
+
+<p>extension=mysqli.so</p>
+
+<h1>setup mariadb, this is a interactive command, just follow the instruction</h1>
+
+<p>sudo mysql_secure_installation</p>
+
+<h1>enable httpd at start-up</h1>
+
+<p>sudo systemctl enable httpd &amp;&amp; systemctl restart httpd
+{% endcodeblock %}</p>
 
 <p>and we are done here.</p>
 ]]></content>

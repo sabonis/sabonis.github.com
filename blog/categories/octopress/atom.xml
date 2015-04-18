@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | a Code Farmer]]></title>
   <link href="http://sabonis.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://sabonis.github.io/"/>
-  <updated>2015-04-19T00:15:16+08:00</updated>
+  <updated>2015-04-19T00:59:25+08:00</updated>
   <id>http://sabonis.github.io/</id>
   <author>
     <name><![CDATA[Sabonis]]></name>
@@ -23,16 +23,12 @@ But there comes a rescuer Cygwin. With Cygwin, you have almost all tools that Un
 have if install properly.</p>
 
 <p>comment out following these lines
-<figure class='code'><figcaption><span>In the Rakefile </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'>    <span class="c1">#if (/cygwin|mswin|mingw|bccwin|wince|emx/ =~ RUBY_PLATFORM) != nil</span>
-</span><span class='line'>      <span class="c1">#puts &amp;lsquo;## Set the codepage to 65001 for Windows machines&amp;rsquo;</span>
-</span><span class='line'>      <span class="c1">#&lt;code&gt;chcp 65001&lt;/code&gt;</span>
-</span><span class='line'>    <span class="c1">#end</span>
-</span></code></pre></td></tr></table></div></figure>
+{% codeblock In the Rakefile lang:ruby %}
+    #if (/cygwin|mswin|mingw|bccwin|wince|emx/ =~ RUBY_PLATFORM) != nil
+      #puts &lsquo;## Set the codepage to 65001 for Windows machines&rsquo;
+      #<code>chcp 65001</code>
+    #end
+{% endcodeblock %}
 or you will get failed in the process of <code>rake generate</code></p>
 ]]></content>
   </entry>
@@ -46,46 +42,26 @@ or you will get failed in the process of <code>rake generate</code></p>
 
 <p>This post is for my memory-limited brain. Basically, three step needed.</p>
 
-<p><figure class='code'><figcaption><span>Console </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'>&lt;/p&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;h3&gt;1. Create a new post.&lt;/h3&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;p&gt;rake new_post<span class="o">[</span><span class="p">&amp;</span>ldquo<span class="p">;</span>POST_TITLE<span class="p">&amp;</span>rdquo<span class="p">;</span><span class="o">]</span> <span class="c"># notice the backslash before square brackets&lt;/p&gt;</span>
-</span><span class='line'>
-</span><span class='line'>&lt;h1&gt;new created post file will locate at place like line below. End with *.markdown.&lt;/h1&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;h3&gt;2. Add markdown format stuff here&lt;/h3&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;p&gt;vi PATH_TO_OCTOPRESS/source/_posts/DATE-POST_TITLE.markdown&lt;/p&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;h3&gt;3. Generate compliled files and push to server you defined before.&lt;/h3&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;p&gt;rake generate <span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> rake deploy&lt;/p&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;h1&gt;or&lt;/h1&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;p&gt;rake gen_deploy
-</span></code></pre></td></tr></table></div></figure></p>
+<p>{% codeblock Console lang:sh %}</p>
+
+<h3>1. Create a new post.</h3>
+
+<p>rake new_post[&ldquo;POST_TITLE&rdquo;] # notice the backslash before square brackets</p>
+
+<h1>new created post file will locate at place like line below. End with *.markdown.</h1>
+
+<h3>2. Add markdown format stuff here</h3>
+
+<p>vi PATH_TO_OCTOPRESS/source/_posts/DATE-POST_TITLE.markdown</p>
+
+<h3>3. Generate compliled files and push to server you defined before.</h3>
+
+<p>rake generate &amp;&amp; rake deploy</p>
+
+<h1>or</h1>
+
+<p>rake gen_deploy
+{% endcodeblock %}</p>
 
 <p>And we are done here.</p>
 ]]></content>
