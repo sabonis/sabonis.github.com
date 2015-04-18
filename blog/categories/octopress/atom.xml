@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | a Code Farmer]]></title>
   <link href="http://sabonis.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://sabonis.github.io/"/>
-  <updated>2014-06-13T21:43:27+08:00</updated>
+  <updated>2015-04-19T00:15:16+08:00</updated>
   <id>http://sabonis.github.io/</id>
   <author>
     <name><![CDATA[Sabonis]]></name>
@@ -23,26 +23,16 @@ But there comes a rescuer Cygwin. With Cygwin, you have almost all tools that Un
 have if install properly.</p>
 
 <p>comment out following these lines
-<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>In the Rakefile </span></figcaption>
+<figure class='code'><figcaption><span>In the Rakefile </span></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">&lt;</span><span class="sr">/p&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="sr">&lt;pre&gt;&lt;code&gt;#if (/</span><span class="n">cygwin</span><span class="o">|</span><span class="n">mswin</span><span class="o">|</span><span class="n">mingw</span><span class="o">|</span><span class="n">bccwin</span><span class="o">|</span><span class="n">wince</span><span class="o">|</span><span class="n">emx</span><span class="o">/</span> <span class="o">=~</span> <span class="no">RUBY_PLATFORM</span><span class="p">)</span> <span class="o">!=</span> <span class="kp">nil</span>
-</span><span class='line'>  <span class="c1">#puts &#39;## Set the codepage to 65001 for Windows machines&#39;</span>
-</span><span class='line'>  <span class="c1">#`chcp 65001`</span>
-</span><span class='line'><span class="c1">#end</span>
-</span><span class='line'><span class="o">&lt;</span><span class="sr">/code&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'>    <span class="c1">#if (/cygwin|mswin|mingw|bccwin|wince|emx/ =~ RUBY_PLATFORM) != nil</span>
+</span><span class='line'>      <span class="c1">#puts &amp;lsquo;## Set the codepage to 65001 for Windows machines&amp;rsquo;</span>
+</span><span class='line'>      <span class="c1">#&lt;code&gt;chcp 65001&lt;/code&gt;</span>
+</span><span class='line'>    <span class="c1">#end</span>
+</span></code></pre></td></tr></table></div></figure>
 or you will get failed in the process of <code>rake generate</code></p>
 ]]></content>
   </entry>
@@ -56,7 +46,7 @@ or you will get failed in the process of <code>rake generate</code></p>
 
 <p>This post is for my memory-limited brain. Basically, three step needed.</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Console </span></figcaption>
+<p><figure class='code'><figcaption><span>Console </span></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -80,7 +70,7 @@ or you will get failed in the process of <code>rake generate</code></p>
 </span><span class='line'>
 </span><span class='line'>&lt;h3&gt;1. Create a new post.&lt;/h3&gt;
 </span><span class='line'>
-</span><span class='line'>&lt;p&gt;rake new_post<span class="o">[</span>&amp;ldquo;POST_TITLE&amp;rdquo;<span class="o">]</span> <span class="c"># notice the backslash before square brackets&lt;/p&gt;</span>
+</span><span class='line'>&lt;p&gt;rake new_post<span class="o">[</span><span class="p">&amp;</span>ldquo<span class="p">;</span>POST_TITLE<span class="p">&amp;</span>rdquo<span class="p">;</span><span class="o">]</span> <span class="c"># notice the backslash before square brackets&lt;/p&gt;</span>
 </span><span class='line'>
 </span><span class='line'>&lt;h1&gt;new created post file will locate at place like line below. End with *.markdown.&lt;/h1&gt;
 </span><span class='line'>
@@ -90,12 +80,12 @@ or you will get failed in the process of <code>rake generate</code></p>
 </span><span class='line'>
 </span><span class='line'>&lt;h3&gt;3. Generate compliled files and push to server you defined before.&lt;/h3&gt;
 </span><span class='line'>
-</span><span class='line'>&lt;p&gt;rake generate &amp;amp;&amp;amp; rake deploy&lt;/p&gt;
+</span><span class='line'>&lt;p&gt;rake generate <span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> rake deploy&lt;/p&gt;
 </span><span class='line'>
 </span><span class='line'>&lt;h1&gt;or&lt;/h1&gt;
 </span><span class='line'>
 </span><span class='line'>&lt;p&gt;rake gen_deploy
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p>And we are done here.</p>
 ]]></content>

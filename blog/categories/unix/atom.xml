@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Unix | a Code Farmer]]></title>
   <link href="http://sabonis.github.io/blog/categories/unix/atom.xml" rel="self"/>
   <link href="http://sabonis.github.io/"/>
-  <updated>2014-06-13T21:43:27+08:00</updated>
+  <updated>2015-04-19T00:15:16+08:00</updated>
   <id>http://sabonis.github.io/</id>
   <author>
     <name><![CDATA[Sabonis]]></name>
@@ -23,7 +23,7 @@
 <p>X230 is a cool laptop I ever used, not mentioned it backend by Arch Linux. Coolest thing is that it has figerprint device.
 You can just use &ldquo;right-index-finger&rdquo; to login into the system without any key pressed.</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Console </span></figcaption>
+<p><figure class='code'><figcaption><span>Console </span></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -56,10 +56,10 @@ You can just use &ldquo;right-index-finger&rdquo; to login into the system witho
 </span><span class='line'>
 </span><span class='line'>&lt;h1&gt;you would find something like this below&lt;/h1&gt;
 </span><span class='line'>
-</span><span class='line'>&lt;p&gt;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;.
-</span><span class='line'>&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;.
-</span><span class='line'>Bus 003 Device 003: ID 147e:2020 Upek TouchChip Fingerprint Coprocessor <span class="o">(</span>WBF advanced mode<span class="o">)</span>
-</span><span class='line'>&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;.&lt;/p&gt;
+</span><span class='line'>&lt;p&gt;<span class="p">&amp;</span>hellip<span class="p">;&amp;</span>hellip<span class="p">;&amp;</span>hellip<span class="p">;&amp;</span>hellip<span class="p">;</span>.
+</span><span class='line'><span class="p">&amp;</span>hellip<span class="p">;&amp;</span>hellip<span class="p">;&amp;</span>hellip<span class="p">;&amp;</span>hellip<span class="p">;</span>.
+</span><span class='line'>Bus <span class="m">003</span> Device 003: ID 147e:2020 Upek TouchChip Fingerprint Coprocessor <span class="o">(</span>WBF advanced mode<span class="o">)</span>
+</span><span class='line'><span class="p">&amp;</span>hellip<span class="p">;&amp;</span>hellip<span class="p">;&amp;</span>hellip<span class="p">;&amp;</span>hellip<span class="p">;</span>.&lt;/p&gt;
 </span><span class='line'>
 </span><span class='line'>&lt;h1&gt;install related package&lt;/h1&gt;
 </span><span class='line'>
@@ -72,7 +72,7 @@ You can just use &ldquo;right-index-finger&rdquo; to login into the system witho
 </span><span class='line'>&lt;h1&gt;follow the instruction, and you are all <span class="nb">set</span>&lt;/h1&gt;
 </span><span class='line'>
 </span><span class='line'>&lt;p&gt;
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+</span></code></pre></td></tr></table></div></figure></p>
 ]]></content>
   </entry>
   
@@ -88,18 +88,18 @@ I was once a user of <em>Screen</em>,
 but after giving <em>Tmux</em> a try. There is no going back&hellip;, at least,
 after changing its key binding to <em>Screen</em> and <em>Vim</em> alike.
 It is, though, powerful enough, folks just don&rsquo;t content with what we have now.
-So here comes one of my favo plugins &ndash; <em>Tmux-Powerline</em>.</p>
+So here comes one of my favo plugins - <em>Tmux-Powerline</em>.</p>
 
-<h2>one big problem &ndash; <strong>Special Character</strong></h2>
+<h2>one big problem - <strong>Special Character</strong></h2>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Use fontforge </span></figcaption>
+<p><figure class='code'><figcaption><span>Use fontforge </span></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 </pre></td><td class='code'><pre><code class='sh'><span class='line'>sudo apt-get install python-fontforge             <span class="c"># install needed package</span>
 </span><span class='line'><span class="nb">cd</span> /usr/share/fonts/truetype/ubuntu-font-family/  <span class="c"># my os is Ubuntu 12.04</span>
 </span><span class='line'>PATH_TO_FONTFORGE UbuntuMono-R.ttf                <span class="c"># no more garbled character</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+</span></code></pre></td></tr></table></div></figure></p>
 ]]></content>
   </entry>
   

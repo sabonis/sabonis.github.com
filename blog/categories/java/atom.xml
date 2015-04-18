@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Java | a Code Farmer]]></title>
   <link href="http://sabonis.github.io/blog/categories/java/atom.xml" rel="self"/>
   <link href="http://sabonis.github.io/"/>
-  <updated>2014-06-13T21:43:27+08:00</updated>
+  <updated>2015-04-19T00:15:16+08:00</updated>
   <id>http://sabonis.github.io/</id>
   <author>
     <name><![CDATA[Sabonis]]></name>
@@ -20,10 +20,10 @@
     <id>http://sabonis.github.io/blog/2013/03/09/my-java-note</id>
     <content type="html"><![CDATA[<p><blockquote><p>Write once, debug everywhere.</p></p><p><h2></p><footer><strong>John Graham-Cumming <a href="http://blog.jgc.org/2007/10/write-once-debug-everywhere.html">http://blog.jgc.org/2007/10/write-once-debug-everywhere.html</a></strong></footer></blockquote> </h2>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>String class StringTest.java  </span></figcaption>
+<p><figure class='code'><figcaption><span>String class StringTest.java  </span></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='java'><span class='line'><span class="o">&amp;</span><span class="n">ldquo</span><span class="o">;</span><span class="n">Jessica</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="o">;.</span><span class="na">subString</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="mi">4</span><span class="o">)</span> <span class="c1">// return Jess</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+</span></code></pre></td></tr></table></div></figure></p>
 ]]></content>
   </entry>
   

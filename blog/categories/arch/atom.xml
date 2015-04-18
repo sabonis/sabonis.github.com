@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Arch | a Code Farmer]]></title>
   <link href="http://sabonis.github.io/blog/categories/arch/atom.xml" rel="self"/>
   <link href="http://sabonis.github.io/"/>
-  <updated>2014-06-13T21:43:27+08:00</updated>
+  <updated>2015-04-19T00:15:16+08:00</updated>
   <id>http://sabonis.github.io/</id>
   <author>
     <name><![CDATA[Sabonis]]></name>
@@ -25,7 +25,7 @@ Those who use Windows, just keep playing CIVILIZATION V, no bothers.</p>
 
 <h2>Installing part</h2>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Console </span></figcaption>
+<p><figure class='code'><figcaption><span>Console </span></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -36,13 +36,13 @@ Those who use Windows, just keep playing CIVILIZATION V, no bothers.</p>
 </span><span class='line'>
 </span><span class='line'>&lt;h1&gt;update all packages&lt;/h1&gt;
 </span><span class='line'>
-</span><span class='line'>&lt;p&gt;pacman -Syu;
+</span><span class='line'>&lt;p&gt;pacman -Syu<span class="p">;</span>
 </span><span class='line'>pacman -S apache php php-apache mariadb
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+</span></code></pre></td></tr></table></div></figure></p>
 
 <h2>Configuring part</h2>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Console </span></figcaption>
+<p><figure class='code'><figcaption><span>Console </span></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -84,8 +84,8 @@ Those who use Windows, just keep playing CIVILIZATION V, no bothers.</p>
 </span><span class='line'>
 </span><span class='line'>&lt;h1&gt;enable httpd at start-up&lt;/h1&gt;
 </span><span class='line'>
-</span><span class='line'>&lt;p&gt;sudo systemctl <span class="nb">enable </span>httpd &amp;amp;&amp;amp; systemctl restart httpd
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+</span><span class='line'>&lt;p&gt;sudo systemctl <span class="nb">enable </span>httpd <span class="p">&amp;</span>amp<span class="p">;&amp;</span>amp<span class="p">;</span> systemctl restart httpd
+</span></code></pre></td></tr></table></div></figure></p>
 
 <p>and we are done here.</p>
 ]]></content>
