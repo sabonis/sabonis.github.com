@@ -6,11 +6,13 @@ comments: true
 categories: Unix
 ---
 
+# Saddly, it has been sold one day in 2014.
+--edited Sun Apr 19 00:58:58 CST 2015
 
 {% img /images/myImage/X230.jpg X230 %}
 
-X230 is a cool laptop I ever used, not mentioned it backend by Arch Linux. Coolest thing is that it has figerprint device. 
-You can just use "right-index-finger" to login into the system without any key pressed. 
+X230 is a cool laptop I ever used, not mentioned it backend by Arch Linux. Coolest thing is that it has figerprint device.
+You can just use "right-index-finger" to login into the system without any key pressed.
 
 {% codeblock Console lang:sh %}
 # check device status
@@ -18,22 +20,15 @@ lsusb
 
 # you would find something like this below
 .............
-.............
+    .............
 Bus 003 Device 003: ID 147e:2020 Upek TouchChip Fingerprint Coprocessor (WBF advanced mode)
-.............
+    .............
 
 # install related package
-pacman -S fprintd
+    pacman -S fprintd
 
 # scan your fingerprint by this interactive command
-fprintd-enroll
+    fprintd-enroll
 # follow the instruction, and you are all set
 
 {% endcodeblock %}
-
-
-
-
-
-
-
