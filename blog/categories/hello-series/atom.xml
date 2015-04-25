@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Hello Series | a Code Farmer]]></title>
+  <link href="http://sabonis.github.io/blog/categories/hello-series/atom.xml" rel="self"/>
+  <link href="http://sabonis.github.io/"/>
+  <updated>2015-04-25T23:12:00+08:00</updated>
+  <id>http://sabonis.github.io/</id>
+  <author>
+    <name><![CDATA[Sabonis]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Hello Sinatra]]></title>
+    <link href="http://sabonis.github.io/blog/2015/04/21/hello-sinatra/"/>
+    <updated>2015-04-21T23:09:57+08:00</updated>
+    <id>http://sabonis.github.io/blog/2015/04/21/hello-sinatra</id>
+    <content type="html"><![CDATA[<h2>The setup</h2>
+
+<p>I choose to take recently most popular technology - Docker as our testing environment.
+One of benefit features of docker is that by using Dockerfile we have a descriptive and
+vcs-capable system environment, and that makes our life easier when we have migration needs.</p>
+
+<pre><code class="sh  Project Structure">/PROJECT_HOME/
+├── Dockerfile
+└── myapp.rb
+
+0 directories, 2 files
+</code></pre>
+
+<p>Easy enough, just two files.</p>
+
+<pre><code class="dockerfile Dockerfile"># It’ll need ruby
+FROM ruby:latest
+
+MAINTAINER sabonis &lt;sabonis.tw@gmail.com&gt;
+
+# The directory our main program` runs on.
+VOLUME /server
+
+# Relative path in which command executes.
+WORKDIR /server
+
+# Install sinatra
+RUN gem install sinatra
+
+# Defaut host of sinatra app is 127.0.0.1,
+# that is not OK if your server needs port-forwarding.
+CMD ruby myapp.rb -o 0.0.0.0
+
+EXPOSE 4567
+</code></pre>
+
+<pre><code class="ruby myapp.rb">#myapp.rb
+require 'sinatra'
+
+get '/' do
+  'Hello world!'
+end
+</code></pre>
+
+<h2>The Hello</h2>
+
+<pre><code class="bash Console"># Build dockerfile to docker image.
+sudo docker build -t YOUR_NAME/sinatra
+
+# Run the image.
+sudo docker run -dp 80:4567 \
+                -v `pwd`:/server \
+                YOUR_NAME/sinatra
+
+# Test whether it works.
+curl localhost
+Hello world!%
+#It works.
+</code></pre>
+]]></content>
+  </entry>
+  
+</feed>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Unix | a Code Farmer]]></title>
   <link href="http://sabonis.github.io/blog/categories/unix/atom.xml" rel="self"/>
   <link href="http://sabonis.github.io/"/>
-  <updated>2015-04-19T01:00:21+08:00</updated>
+  <updated>2015-04-25T23:12:00+08:00</updated>
   <id>http://sabonis.github.io/</id>
   <author>
     <name><![CDATA[Sabonis]]></name>
@@ -52,6 +52,8 @@ You can just use &ldquo;right-index-finger&rdquo; to login into the system witho
 <span class='line-number'>22</span>
 <span class='line-number'>23</span>
 <span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
 </pre></td><td class='code'><pre><code class='sh'><span class='line'>&lt;/p&gt;
 </span><span class='line'>
 </span><span class='line'>&lt;h1&gt;check device status&lt;/h1&gt;
@@ -61,17 +63,19 @@ You can just use &ldquo;right-index-finger&rdquo; to login into the system witho
 </span><span class='line'>&lt;h1&gt;you would find something like this below&lt;/h1&gt;
 </span><span class='line'>
 </span><span class='line'>&lt;p&gt;<span class="p">&amp;</span>hellip<span class="p">;&amp;</span>hellip<span class="p">;&amp;</span>hellip<span class="p">;&amp;</span>hellip<span class="p">;</span>.
-</span><span class='line'><span class="p">&amp;</span>hellip<span class="p">;&amp;</span>hellip<span class="p">;&amp;</span>hellip<span class="p">;&amp;</span>hellip<span class="p">;</span>.
+</span><span class='line'>    <span class="p">&amp;</span>hellip<span class="p">;&amp;</span>hellip<span class="p">;&amp;</span>hellip<span class="p">;&amp;</span>hellip<span class="p">;</span>.
 </span><span class='line'>Bus <span class="m">003</span> Device 003: ID 147e:2020 Upek TouchChip Fingerprint Coprocessor <span class="o">(</span>WBF advanced mode<span class="o">)</span>
-</span><span class='line'><span class="p">&amp;</span>hellip<span class="p">;&amp;</span>hellip<span class="p">;&amp;</span>hellip<span class="p">;&amp;</span>hellip<span class="p">;</span>.&lt;/p&gt;
+</span><span class='line'>    <span class="p">&amp;</span>hellip<span class="p">;&amp;</span>hellip<span class="p">;&amp;</span>hellip<span class="p">;&amp;</span>hellip<span class="p">;</span>.&lt;/p&gt;
 </span><span class='line'>
 </span><span class='line'>&lt;h1&gt;install related package&lt;/h1&gt;
 </span><span class='line'>
-</span><span class='line'>&lt;p&gt;pacman -S fprintd&lt;/p&gt;
+</span><span class='line'>&lt;pre&gt;&lt;code&gt;pacman -S fprintd
+</span><span class='line'>&lt;/code&gt;&lt;/pre&gt;
 </span><span class='line'>
 </span><span class='line'>&lt;h1&gt;scan your fingerprint by this interactive <span class="nb">command</span>&lt;/h1&gt;
 </span><span class='line'>
-</span><span class='line'>&lt;p&gt;fprintd-enroll&lt;/p&gt;
+</span><span class='line'>&lt;pre&gt;&lt;code&gt;fprintd-enroll
+</span><span class='line'>&lt;/code&gt;&lt;/pre&gt;
 </span><span class='line'>
 </span><span class='line'>&lt;h1&gt;follow the instruction, and you are all <span class="nb">set</span>&lt;/h1&gt;
 </span><span class='line'>

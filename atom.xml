@@ -4,7 +4,7 @@
   <title><![CDATA[a Code Farmer]]></title>
   <link href="http://sabonis.github.io/atom.xml" rel="self"/>
   <link href="http://sabonis.github.io/"/>
-  <updated>2015-04-19T01:00:21+08:00</updated>
+  <updated>2015-04-25T23:12:00+08:00</updated>
   <id>http://sabonis.github.io/</id>
   <author>
     <name><![CDATA[Sabonis]]></name>
@@ -12,6 +12,121 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Hello Sinatra]]></title>
+    <link href="http://sabonis.github.io/blog/2015/04/21/hello-sinatra/"/>
+    <updated>2015-04-21T23:09:57+08:00</updated>
+    <id>http://sabonis.github.io/blog/2015/04/21/hello-sinatra</id>
+    <content type="html"><![CDATA[<h2>The setup</h2>
+
+<p>I choose to take recently most popular technology - Docker as our testing environment.
+One of benefit features of docker is that by using Dockerfile we have a descriptive and
+vcs-capable system environment, and that makes our life easier when we have migration needs.</p>
+
+<figure class='code'><figcaption><span>Project Structure</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>/PROJECT_HOME/
+</span><span class='line'>├── Dockerfile
+</span><span class='line'>└── myapp.rb
+</span><span class='line'>
+</span><span class='line'><span class="m">0</span> directories, <span class="m">2</span> files
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Easy enough, just two files.</p>
+
+<figure class='code'><figcaption><span>Dockerfile</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+</pre></td><td class='code'><pre><code class='dockerfile'><span class='line'><span class="c"># It’ll need ruby</span>
+</span><span class='line'><span class="k">FROM</span> ruby:latest
+</span><span class='line'>
+</span><span class='line'><span class="k">MAINTAINER</span> sabonis &lt;sabonis.tw@gmail.com&gt;
+</span><span class='line'>
+</span><span class='line'><span class="c"># The directory our main program` runs on.</span>
+</span><span class='line'><span class="k">VOLUME</span> /server
+</span><span class='line'>
+</span><span class='line'><span class="c"># Relative path in which command executes.</span>
+</span><span class='line'><span class="k">WORKDIR</span> /server
+</span><span class='line'>
+</span><span class='line'><span class="c"># Install sinatra</span>
+</span><span class='line'><span class="k">RUN</span> gem install sinatra
+</span><span class='line'>
+</span><span class='line'><span class="c"># Defaut host of sinatra app is 127.0.0.1,</span>
+</span><span class='line'><span class="c"># that is not OK if your server needs port-forwarding.</span>
+</span><span class='line'><span class="k">CMD</span> ruby myapp.rb -o 0.0.0.0
+</span><span class='line'>
+</span><span class='line'><span class="k">EXPOSE</span> <span class="m">4567</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span>myapp.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="c1">#myapp.rb</span>
+</span><span class='line'><span class="nb">require</span> <span class="s1">&#39;sinatra&#39;</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">get</span> <span class="s1">&#39;/&#39;</span> <span class="k">do</span>
+</span><span class='line'>  <span class="s1">&#39;Hello world!&#39;</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>The Hello</h2>
+
+<figure class='code'><figcaption><span>Console</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="c"># Build dockerfile to docker image.</span>
+</span><span class='line'>sudo docker build -t YOUR_NAME/sinatra
+</span><span class='line'>
+</span><span class='line'><span class="c"># Run the image.</span>
+</span><span class='line'>sudo docker run -dp 80:4567 <span class="se">\</span>
+</span><span class='line'>                -v <span class="sb">`</span><span class="nb">pwd</span><span class="sb">`</span>:/server <span class="se">\</span>
+</span><span class='line'>                YOUR_NAME/sinatra
+</span><span class='line'>
+</span><span class='line'><span class="c"># Test whether it works.</span>
+</span><span class='line'>curl localhost
+</span><span class='line'>Hello world!%
+</span><span class='line'><span class="c">#It works.</span>
+</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Octopress on Cygwin]]></title>
@@ -151,19 +266,17 @@ You can just use &ldquo;right-index-finger&rdquo; to login into the system witho
 </span><span class='line'>
 </span><span class='line'><span class="c"># you would find something like this below</span>
 </span><span class='line'>.............
-</span><span class='line'>.............
+</span><span class='line'>    .............
 </span><span class='line'>Bus <span class="m">003</span> Device 003: ID 147e:2020 Upek TouchChip Fingerprint Coprocessor <span class="o">(</span>WBF advanced mode<span class="o">)</span>
-</span><span class='line'>.............
+</span><span class='line'>    .............
 </span><span class='line'>
 </span><span class='line'><span class="c"># install related package</span>
-</span><span class='line'>pacman -S fprintd
+</span><span class='line'>    pacman -S fprintd
 </span><span class='line'>
 </span><span class='line'><span class="c"># scan your fingerprint by this interactive command</span>
-</span><span class='line'>fprintd-enroll
+</span><span class='line'>    fprintd-enroll
 </span><span class='line'><span class="c"># follow the instruction, and you are all set</span>
 </span></code></pre></td></tr></table></div></figure>
-
-
 
 ]]></content>
   </entry>
