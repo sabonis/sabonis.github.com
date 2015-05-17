@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Reading Note | a Code Farmer]]></title>
+  <link href="http://sabonis.github.io/blog/categories/reading-note/atom.xml" rel="self"/>
+  <link href="http://sabonis.github.io/"/>
+  <updated>2015-05-17T13:30:00+08:00</updated>
+  <id>http://sabonis.github.io/</id>
+  <author>
+    <name><![CDATA[Sabonis]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[たのしいRuby 第4版 Reading Notes 0]]></title>
+    <link href="http://sabonis.github.io/blog/2015/05/03/tafalsesiiruby-di-4ban/"/>
+    <updated>2015-05-03T12:30:48+08:00</updated>
+    <id>http://sabonis.github.io/blog/2015/05/03/tafalsesiiruby-di-4ban</id>
+    <content type="html"><![CDATA[<p><img src="/images/myImage/ruby_v4.jpg" width="300" height="225"></p>
+
+<p>I bought it three months ago, but never read it once since then.
+It is a Chinese-translated edition, because the original book is
+written in Japanese, which I am totally not familiar with, not
+even a word.
+I gonna to read it, write some notes and hope finish this
+book in not very long time.</p>
+
+<h2>Basics</h2>
+
+<p>&ldquo;Hello World&rdquo; is always a best friend of novice.<br/>
+I am going to begin my journey of ruby with its basic output functions.</p>
+
+<h3>Standard outputs</h3>
+
+<pre><code class="ruby">=begin
+ruby style's multi-line comments.
+=end
+
+print("Hello World\n"); #=&gt; Hello World
+# note: semicolon is not nesessary. ruby is not JAVA
+
+puts('Hello World') #=&gt; Hello World
+# Same as above except "\n" is automatically added at the end of string.
+
+p('Hello World') #=&gt; 'Hello World'
+# "p()" is simply output data in its natrual literal form.
+</code></pre>
+
+<h3>Standard outputs revisited</h3>
+
+<pre><code class="ruby">a = 'World'
+
+print("Hello ", a, "\n")
+print("Hello #{a}\n")
+puts("Hello #{a}")
+#=&gt; Hello World
+# Three of above have no differences.
+</code></pre>
+
+<h3>Loops</h3>
+
+<pre><code class="ruby">(10.times do |i|
+    print(i)
+end).times do
+    print(i)
+end
+#=&gt; 01234567890123456789
+</code></pre>
+
+<p>What?<br/>
+Yes, that&rsquo;s a use of chain rule, as <a href="http://ruby-doc.org/core-2.2.2/Integer.html#method-i-times"><code>times</code></a>
+is a function that return itself, which is 10.
+10 is a instance of <a href="http://ruby-doc.org/core-2.2.2/Fixnum.html"><code>Fixnum</code></a>
+, which is also a subclass of <code>Integer</code>.
+Let&rsquo;s take look at the big picture of <code>Numeric</code> class hiearchy in Ruby.<sup id='fninref:1'><a href='#fnin:1' rel='footnote'>1</a></sup></p>
+
+<pre><code class="text Class Hiearchy">Numeric
+    -&gt; Integer            #-&gt; method "times" lies in.
+        -&gt; Fixnum         #-&gt; where 10 comes from.
+        -&gt; Bignum
+</code></pre>
+
+<h3>Everything is object</h3>
+
+<p>That&rsquo;s ruby, everything is object. Unlike java, there is no primitive type.
+You might wondering where <code>print()</code> comes from<sup id='fninref:2'><a href='#fnin:2' rel='footnote'>2</a></sup>.
+<code>IO</code> is where it comes from. There are three constant, STDIN, STDOUT and STDERR, which is pointed by
+ruby&rsquo;s global variables, $stdin, $stdout and $sterr respectively.<br/>
+<code>print()</code> is a alias of <code>$stdout.print()</code> provided by ruby&rsquo;s <code>Kernel</code> module.</p>
+
+<pre><code class="ruby print() is alias of $stdout.print()">$stdout.print('I am a alias')
+# is equivelent to
+print('I am a alias')
+</code></pre>
+
+<h3>Array and Hash</h3>
+
+<p>Beside <code>String</code> and <code>Numeric</code> two basic structure, Ruby has two more advanced data structure -
+<code>Array</code> and <code>Hash</code>.
+You can think of both as Java&rsquo;s <code>List</code>and <code>Map</code>.</p>
+
+<pre><code class="ruby Array">names = ['sabonis', 'sprewell', 'shiren']
+#=&gt; ['sabonis', 'sprewell', 'shiren']
+
+mix = ['sabonis', 29]
+#=&gt; Ruby supports different types in one container.
+
+# Size of array
+names.size()
+#=&gt; 3
+
+# Iteration
+names.each { |item|
+    print(item, '')
+}
+#=&gt; sabonis sprewell shiren
+# {...} is same as "do ... end" block.
+</code></pre>
+
+<pre><code class="ruby Hash">address = {:city =&gt; 'Taipei', :country =&gt; 'Taiwan'}
+
+# Iteration
+address.each {|key, value|
+    puts(key, ' =&gt; ', value)
+}
+#=&gt; city =&gt; Taipei
+#=&gt; country =&gt; Taiwan
+</code></pre>
+
+<p><code>:city</code> is a <code>Symbol</code> of ruby, you can think of this as a lightweight
+version of <code>String</code>.
+<blockquote><p>The same Symbol object will be created for a given name or string for the duration of a program&rsquo;s execution, regardless of the context or meaning of that name.</p><footer><strong>Ruby Reference <a href="http://ruby-doc.org/core-2.2.0/Symbol.html">http://ruby-doc.org/core-2.2.0/Symbol.html</a></strong></footer></blockquote></p>
+
+<p>Per doc says, there will be one instance of Symbol with same name till program ended.</p>
+
+<h2>Notes</h2>
+
+<p><div class="footnotes"><ol><li id='fnin:1'><p>For more information, see <a href="http://ruby-doc.org/core-2.2.2/Numeric.html">Ruby Reference</a> <a href='#fninref:1' rel='reference'>&#8617;</a></p>
+</li><li id='fnin:2'><p>See this <a href="https://robots.thoughtbot.com/io-in-ruby">post</a> <a href='#fninref:2' rel='reference'>&#8617;</a></p>
+</li></ol></div></p>
+]]></content>
+  </entry>
+  
+</feed>
