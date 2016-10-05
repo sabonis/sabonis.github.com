@@ -1,0 +1,117 @@
+{
+  "basics": {
+    "name": "曾以均",
+    "label": "Coffee => Code",
+    "picture": "",
+    "email": "sabonis.tw@gmail.com",
+    "phone": "0922102864",
+    "website": "https://github.com/sabonis/",
+    "summary": "喜歡過著 type-safe 的生活，沒 functional 無法寫 code ",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "",
+      "countryCode": "",
+      "region": ""
+    },
+    "profiles": []
+  },
+  "work": [
+    {
+      "company": "凡淂",
+      "position": "Senior Programmer",
+      "website": "http://phind.me/",
+      "startDate": "2014-07",
+      "endDate": "2016-10",
+      "summary": "專職 Android app 開發，第一年開發了三，四款上架作品。第二年公司轉型做電商，開始用 nodejs 寫後台，當時與主管討論到用 scala 可能性，因為我覺得大型軟體專案用弱類型語言，將來不論是 refactoring 或是 debug 都會非常困難，但最後沒被採用。只好自己利用下班時間看了多本 scala 與 sbt 的書籍，幻想著哪天能用 scala 做 production 的東西。",
+      "highlights": []
+    },
+    {
+      "company": "ASAP閃電購物網",
+      "position": "Programmer",
+      "website": "http://www.asap.com.tw/",
+      "startDate": "2014-03",
+      "endDate": "2014-07",
+      "summary": "後台 php 開發",
+      "highlights": []
+    },
+    {
+      "company": "愛評網",
+      "position": "Programmer",
+      "website": "http://www.ipeen.com.tw/",
+      "startDate": "2012-01",
+      "endDate": "2014-02",
+      "summary": "負責php 後台開發，後期轉開發 Android app，初期使用 Titanium ，之後因為效能問題，改用 Java 重寫，重此愛上 static-type language",
+      "highlights": []
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "淡江大學",
+      "area": "財務金融",
+      "studyType": "Bachelor",
+      "startDate": "2005",
+      "endDate": "2009",
+      "gpa": "",
+      "courses": []
+    }
+  ],
+  "awards": [],
+  "publications": [
+    {
+      "name": "Youtube_downloader",
+      "publisher": "",
+      "releaseDate": "",
+      "website": "https://github.com/sabonis/youtube_downloader",
+      "summary": "Akka-http side project"
+    },
+    {
+      "name": "Z-wave Home Mate",
+      "publisher": "",
+      "releaseDate": "",
+      "website": "https://play.google.com/store/apps/details?id=com.philio.me.home.automation2015",
+      "summary": "居家智慧，物聯網相關的應用"
+    },
+    {
+      "name": "Ipeen Android app",
+      "publisher": "",
+      "releaseDate": "",
+      "website": "https://play.google.com/store/apps/details?id=tw.com.ipeen.ipeenapp",
+      "summary": "愛評網上架作品"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Front-End",
+      "level": "",
+      "keywords": [
+        "Javascript",
+        "React"
+      ]
+    },
+    {
+      "name": "Back-End",
+      "level": "",
+      "keywords": [
+        "Nodejs",
+        "Scala",
+        "Akka",
+        "Php",
+        "Java",
+        "AWS",
+        "Docker"
+      ]
+    },
+    {
+      "name": "Android",
+      "level": "",
+      "keywords": [
+        "Java"
+      ]
+    }
+  ],
+  "languages": [],
+  "interests": [],
+  "references": []
+}
